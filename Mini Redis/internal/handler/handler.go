@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"redis-clone/internal/database"
+	"redis-clone/internal/domain"
 	"redis-clone/internal/model"
 	"strings"
 )
@@ -10,12 +10,12 @@ import (
 
 
 type Handler struct {
-	database database.Data
+	database domain.Storage
 }
 
 
 
-func NewHandler(database database.Data) *Handler{
+func NewHandler(database domain.Storage) *Handler{
 	return  &Handler{database: database}
 }
 

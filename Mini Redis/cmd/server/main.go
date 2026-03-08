@@ -12,7 +12,7 @@ func main(){
 
 	database := database.NewData()
 
-	handler := handler.NewHandler(*database)
+	handler := handler.NewHandler(database)
 
 	tcp := tcp.NewHandler(*handler)
 
