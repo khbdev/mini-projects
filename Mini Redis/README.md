@@ -22,11 +22,16 @@ nc localhost 8084
 Example:
 
 ```
-SET name azizbek
-OK
+SET name gopher
 
-GET name
-azizbek
+
+GET name gopher
+
+
+DEL name gopher
+
+
+
 ```
 
 This project is built for **learning and experimentation**.
